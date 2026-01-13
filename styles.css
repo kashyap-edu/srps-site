@@ -1,0 +1,163 @@
+:root{
+  --primary:#004080;
+  --accent:#ff5722;
+  --light:#f7f9fc;
+  --text:#222;
+  --muted:#667085;
+  --card:#ffffff;
+}
+
+/* Base */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--light);
+  line-height: 1.6;
+}
+img{max-width:100%;display:block}
+
+/* Containers */
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+.section{padding:64px 0}
+.section h2{
+  font-size:32px;margin:0 0 10px;color:var(--primary);letter-spacing:.2px
+}
+.section-sub{color:var(--muted);margin:0 0 24px}
+.two-col{display:flex;gap:32px;flex-wrap:wrap}
+.two-col>div{flex:1 1 420px}
+
+/* Header */
+.school-header{
+  background: var(--primary);
+  color:#fff;
+  padding:16px 20px;
+  display:flex;align-items:center;flex-wrap:wrap;gap:16px;justify-content:space-between
+}
+.school-logo{width:90px;height:auto}
+.school-info{min-width:260px}
+.school-info h1{margin:0;font-size:30px}
+.school-info p{margin:6px 0 0;font-size:15px;opacity:.9}
+.nav-bar{width:100%;text-align:center}
+.nav-bar a{
+  color:#fff;text-decoration:none;margin:0 12px;font-weight:600
+}
+.nav-bar a:hover{opacity:.85}
+
+/* Hero */
+.hero{
+  position:relative;
+  background:url('img/school-banner.jpg') center/cover no-repeat;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff
+}
+.hero .overlay{
+  position:absolute;inset:0;background:rgba(0,0,0,.52)
+}
+.hero-content{
+  position:relative;z-index:1;max-width:800px;padding:20px
+}
+.hero h1{font-size:50px;margin:0 0 8px;text-transform:uppercase;letter-spacing:.8px}
+.hero h2{font-size:34px;margin:0 0 12px}
+.hindi-slogan{
+  font-size:26px;color:#ffeb3b;margin:10px 0 8px;font-weight:bold
+}
+.hero-sub{font-size:18px;opacity:.92;margin-bottom:22px}
+.btn{
+  display:inline-block;border-radius:8px;padding:12px 22px;font-weight:700;text-decoration:none;transition:.25s
+}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#e64a19;box-shadow:0 0 16px rgba(255,87,34,.55)}
+.btn-outline{border:2px solid var(--primary);color:var(--primary);background:#fff}
+.btn-outline:hover{background:var(--primary);color:#fff}
+
+/* About */
+.about-section{background:#f0f7ff}
+.about-text p{margin:0 0 18px}
+.pill-row{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 18px}
+.pill{
+  background:#fff;border:1px solid #e6eef8;border-radius:999px;padding:8px 12px;font-size:14px;color:#444;display:flex;align-items:center;gap:8px
+}
+.mv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:8px 0 16px}
+.card{
+  background:var(--card);border:1px solid #e8eef7;border-radius:12px;padding:16px;box-shadow:0 6px 16px rgba(20,20,20,.06)
+}
+.card h3{margin:0 0 8px;color:var(--accent)}
+.subhashit{
+  text-align:center;margin-top:4px;font-style:italic;color:#333
+}
+.about-image img{
+  border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.18)
+}
+
+/* Programs */
+.programs-section{background:#fff}
+.program-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:10px
+}
+.program-card{
+  background:#fff;border:1px solid #e9edf5;border-radius:12px;padding:16px;
+  box-shadow:0 6px 16px rgba(16,24,40,.06);transition:transform .25s
+}
+.program-card:hover{transform:translateY(-4px)}
+.program-card .icon{font-size:28px;margin-bottom:8px}
+.class-tags{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.class-tags span{
+  background:#f2f6ff;border:1px solid #e1eaff;color:#274c77;padding:6px 10px;border-radius:999px;font-size:13px
+}
+
+/* Gallery */
+.gallery-section{background:#f9fbff}
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px
+}
+.gallery-item{
+  position:relative;overflow:hidden;border-radius:12px;box-shadow:0 8px 18px rgba(0,0,0,.08)
+}
+.gallery-item img{transition:transform .35s}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent, rgba(0,0,0,.55));
+  color:#fff;padding:10px 12px;font-weight:600
+}
+
+/* Admission */
+.admission-section{background:#fffaf3}
+.admission-text p{margin:0 0 14px}
+.checklist{list-style:none;padding:0;margin:0 0 16px}
+.checklist li{display:flex;align-items:center;gap:8px;margin:6px 0;color:#333}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0 8px}
+.hindi-note{margin-top:6px;color:#b03a1c;font-weight:700}
+.highlight{height:100%}
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.badge{
+  background:#fff;border:1px solid #ffe0c2;color:#a84e21;padding:6px 10px;border-radius:999px;font-size:12px
+}
+
+/* Contact */
+.contact-section{background:#ffffff}
+.contact-info p{margin:6px 0}
+.social-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.social{
+  text-decoration:none;font-weight:700;border-radius:8px;padding:8px 12px;border:1px solid #e8eef7;background:#fff
+}
+.social.fb{color:#1877f2}
+.social.ig{color:#e1306c}
+.social.wa{color:#25d366}
+.contact-map iframe{border-radius:12px;box-shadow:0 8px 18px rgba(0,0,0,.08)}
+
+/* Footer */
+footer{
+  background:var(--primary);color:#fff;padding:20px 0;margin-top:0
+}
+footer .motto{opacity:.95;margin:6px 0 10px;font-weight:600}
+footer .quick-links{display:flex;gap:14px;flex-wrap:wrap}
+footer .quick-links a{color:#fff;text-decoration:none;opacity:.9}
+footer .quick-links a:hover{opacity:1}
+
+/* Responsive tweaks */
+@media (max-width:640px){
+  .hero h1{font-size:38px}
+  .hero h2{font-size:26px}
+  .hindi-slogan{font-size:22px}
+}
